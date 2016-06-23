@@ -3,7 +3,9 @@ var popupTemp = require('./popup.hbs');
 
 var appNavTemp = require('./app-nav.hbs');
 
-var workService = require('./service/works.js');
+var worksListTemp = require('./works-list.hbs');
+
+var workService = require('./service/works');
 
 // Initialize your app
 var myApp = new Framework7();
@@ -38,31 +40,23 @@ myApp.onPageInit('jingli', function(page) {
 });
 
 
-
-var photoBrowserPhotos = [{
-        url: '../static/images/works/idhua/hy01.jpg',
-        caption: '360会员中心首页'
-    }, {
-        url: '../static/images/works/idhua/hy02.jpg',
-        caption: '360会员中心做任务'
-    }, {
-        url: '../static/images/works/idhua/hy03.jpg',
-        caption: '360会员中心领特权'
-    }
-
-];
-
 myApp.onPageInit('works', function(page) {
-    $$('.show-photo').on('click', function() {
-        myApp.photoBrowser({
-            photos: photoBrowserPhotos,
-            lazyLoading: true,
-            theme: 'dark',
-            backLinkText: '返回'
-        }).open();
-    });
-});
 
-workService.getList().then(function(data) {
-    console.log(data);
+    workService.getList().then(function(data) {
+        $$(".works-list-box").html(worksListTemp(data));
+
+        $$('.show-photo').on('click', function() {
+            var $$this = $$(this);
+
+            workService.getById($$this.attr("data-id")).then(function(data) {
+                myApp.photoBrowser({
+                    photos: data.list,
+                    lazyLoading: true,
+                    theme: 'dark',
+                    backLinkText: '返回'
+                }).open();
+            });
+
+        });
+    });
 });
