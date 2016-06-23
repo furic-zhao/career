@@ -1,0 +1,91 @@
+{
+    "ftp": {
+        "host": "xx.xx.xx.xx",
+        "port": "21",
+        "user": "username",
+        "pass": "password",
+        "remotePath": "remotePath", //默认上传到根目录下，配置此属性可指定具体子目录
+        "includeHtml": true //ftp 上传是否包含 html
+    },
+
+    "livereload": {
+        "available": true, //开启自动刷新
+        "port": 8080,
+        "startPath": "html/index.html" //启动时自动打开的路径
+    },
+
+    //路径相对于 tasks/plugins 目录
+    "plugins": {
+        "build_devAfter": ["zIndex"], //dev 任务执行后自动执行
+        "build_distAfter": [], //build 任务执行后自动执行
+        "ftpAfter": ["ftp"] //ftp 任务执行后自动执行
+    },
+
+    "lazyDir": ["../slice"], //gulp-lazyImageCSS 寻找目录(https://github.com/weixin/gulp-lazyimagecss)
+
+    "supportWebp": false, //是否使用 webp
+
+    "supportREM": false, //是否使用REM 转换
+
+    "supportChanged": false,
+
+    "reversion": false, //是否启用md5文件名
+
+    /*路径配置*/
+    "paths": {
+        /*源码目录*/
+        "src": {
+            "dir": "./src",
+
+            "img": "./src/static/images/**/*.{JPG,jpg,png,gif}",
+            "slice": "./src/static/slice/**/*.png",
+
+            "lib": "./src/lib/**/*.js",
+
+            "appJs": "./src/views/*/*.js",
+            "appJsALL": "./src/views/**/*.js",
+
+            "less": "./src/static/styles/page-*.less",
+            "lessAll": "./src/static/styles/**/*.less",
+
+            "html": ["./src/views/**/*.html", "!./src/views/_*/**.html", "!./src/views/_*/**/**.html"],
+            "htmlAll": "./src/views/**/*.html"
+        },
+
+        "dev": {
+            "dir": "./dev",
+
+            "appjs": "./dev/static/js", //业务层js
+
+            "css": "./dev/static/css",
+
+            "html": "./dev/html"
+        },
+
+        "tmp": {
+            "dir": "./tmp",
+
+            "appjs": "./tmp/static/js", //业务层js
+
+            "css": "./tmp/static/css",
+
+            "img": "./tmp/static/images",
+            "sprite": "./tmp/static/sprite",
+
+            "html": "./tmp/html"
+        },
+
+        "dist": {
+            "dir": "./dist",
+
+            "appjs": "./dist/static/js", //业务层js
+
+            "css": "./dist/static/css",
+
+            "img": "./dist/static/images",
+            "sprite": "./dist/static/sprite",
+
+            "html": "./dist/html"
+        }
+    }
+}
