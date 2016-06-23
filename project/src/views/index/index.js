@@ -3,7 +3,7 @@ var popupTemp = require('./popup.hbs');
 
 var appNavTemp = require('./app-nav.hbs');
 
-
+var workService = require('./service/works.js');
 
 // Initialize your app
 var myApp = new Framework7();
@@ -38,21 +38,6 @@ myApp.onPageInit('jingli', function(page) {
 });
 
 
-var workInfo = {
-    data: [{
-        name: "userCenter",
-        list: [{
-            url: '../static/images/works/idhua/hy01.jpg',
-            caption: '360会员中心首页'
-        }, {
-            url: '../static/images/works/idhua/hy02.jpg',
-            caption: '360会员中心做任务'
-        }, {
-            url: '../static/images/works/idhua/hy03.jpg',
-            caption: '360会员中心领特权'
-        }]
-    }]
-};
 
 var photoBrowserPhotos = [{
         url: '../static/images/works/idhua/hy01.jpg',
@@ -67,8 +52,6 @@ var photoBrowserPhotos = [{
 
 ];
 
-
-
 myApp.onPageInit('works', function(page) {
     $$('.show-photo').on('click', function() {
         myApp.photoBrowser({
@@ -78,4 +61,8 @@ myApp.onPageInit('works', function(page) {
             backLinkText: '返回'
         }).open();
     });
+});
+
+workService.getList().then(function(data) {
+    console.log(data);
 });
