@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- Your app title -->
+  <title>My App</title>
+  <!-- Path to Framework7 Library CSS, iOS Theme -->
+  <link rel="stylesheet" href="../static/css/page-framework7.ios.css">
+  <!-- Path to Framework7 color related styles, iOS Theme -->
+  <link rel="stylesheet" href="../static/css/page-framework7.ios.colors.css">
+  <!-- Path to your custom app styles-->
+  <link rel="stylesheet" href="../static/css/page-index.css"></head>
+<body>
+  <!-- Status bar overlay for fullscreen mode-->
+  <div class="statusbar-overlay"></div>
+  <!-- Panels overlay-->
+  <div class="panel-overlay"></div>
+  <!-- Left panel with reveal effect-->
+  <div class="panel panel-left panel-cover layout-dark">
+    <div class="content-block-title">页面导航</div>
+    <div class="list-block app-nav"></div>
+  </div>
+  <!-- Right panel with cover effect-->
+  <div class="panel panel-right panel-cover">
+    <div class="content-block">
+      <p>Right panel content goes here</p>
+    </div>
+  </div>
+  <!-- Views-->
+  <div class="views">
+    <!-- Your main view, should have "view-main" class-->
+    <div class="view view-main">
+      <!-- Top Navbar-->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="center sliding">WebApp简历</div>
+          <div class="right">
+            <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+      <div class="pages navbar-through toolbar-through">
+        <!-- Index Page-->
+        <div data-page="index" class="page">
+          <div class="page-content">
+            <div class="content-block-title">说点啥吧</div>
+            <div class="content-block">
+              <div class="content-block-inner">
+                <p>这是一个基于framework7构建的WebApp版的简历。</p>
+              </div>
+            </div>
+            <div class="list-block app-nav"></div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Toolbar-->
+      <div class="toolbar">
+        <div class="toolbar-inner">
+          <!-- <a href="#" class="link">Link 1</a>
+        -->
+        <a href="#" data-popover=".popover-nav" class="open-popover link">导航</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 底部nav模板 -->
+<div class="popover popover-nav">
+  <div class="popover-angle"></div>
+  <div class="popover-inner">
+    <div class="list-block app-nav"></div>
+  </div>
+</div>
+
+<!-- build:js ../lib/framework7.js -->
+<script type="text/javascript" src="../lib/framework7.js"></script>
+<!-- endbuild -->
+<script type="text/javascript" src="../static/js/index.js"></script>
+</body>
+</html>
