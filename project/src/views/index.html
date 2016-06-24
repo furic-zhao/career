@@ -52,10 +52,76 @@
             <div class="content-block-title">说点啥吧</div>
             <div class="content-block">
               <div class="content-block-inner">
-                <p>这是一个基于framework7构建的WebApp版的简历。</p>
+                <p>这是一个基于framework7构建的WebApp版的简历。使用gulp自动化构建工程（LESS/Sass编译、CSS/JS合并压缩、雪碧图自动合成、Imagemin图片压缩等）。使用Browserify分层规划、管理打包业务层模块逻辑，使用Nodejs风格模块开发。使用Q.js(Promise)异步编程、管理各业务模块的依赖和运行。使用LiveReload开发环境、监听文件变动、自动刷新浏览器。</p>
               </div>
             </div>
+
+            <!-- 头像 -->
+            <div class="card ks-card-header-pic">
+              <div valign="bottom" class="aboutme-pic card-image color-white no-border">Furic</div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p>个人能力有限，团队力量无限！让激情燃烧自己，把火光照亮别人!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-block">
+              <ul>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title">姓名</div>
+                      <div class="item-after">赵会见(Furic)</div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title">现任职位</div>
+                      <div class="item-after">前端技术经理</div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title">工作经验</div>
+                      <div class="item-after">12年WEB产品架构研发经验</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="content-block-title">自我介绍</div>
+            <div class="content-block">
+              <div class="content-block-inner">
+                <p>
+                  2004年，较早进入互联网Web开发领域，经历过原始的Table排版、写JS原生代码及ASP/SQLserver的后端架构。2007年起在创业公司工作，开始使用div/css排版、较早使用jquery(1.2)框架及PHP/Mysql搭建网站，二次开发早期的开源系统（风讯/科讯CMS、DEDECMS、帝国CMS、PHPwind、Discuz、UCenter Home等）搭建个人网站并移植内部功能模块到工作项目中，学会了敏捷开发、锻炼了技术的全面运用、以及协调团队伙伴高效协作实现产品功能。2012进入大型互联网公司，由于严格的分工而主攻前端，同时与各种背景的人（运营、产品、设计、服务端、客户端、测试）打交道，目前善于协调项目前期策划、设计、控制需求范围和项目进度、从零到一的前期技术架构，及协调解决各环节问题。现在的技术方向：前端工程、模块开发、异步编程、前后端开源框架库(Bootstrap、Angular、Thinkphp、Laravel)。
+                </p>
+              </div>
+            </div>
+
+            <!-- 页面导航 -->
             <div class="list-block app-nav"></div>
+
+      <div class="content-block-title">意向岗位</div>
+      <div class="content-block">
+        <div class="content-block-inner">
+          <p>高级WEB产品架构师、技术经理、项目经理、产品经理</p>
+        </div>
+      </div>
+
+      <div class="content-block-title">意向职责</div>
+      <div class="content-block">
+        <div class="content-block-inner">
+          <p>负责产品需求分析和架构设计、参与系统技术选型及核心模块技术验证和技术攻关，带领团队实现并完善产品功能，协调测试、上线、反馈等流程，控制产品进度及处理各环节问题，保证产品最终质量</p>
+        </div>
+      </div>
 
           </div>
         </div>
@@ -63,28 +129,27 @@
       <!-- Bottom Toolbar-->
       <div class="toolbar">
         <div class="toolbar-inner">
-          <!-- <a href="#" class="link">Link 1</a>
-        -->
-        <a href="#" data-popover=".popover-nav" class="open-popover link">导航</a>
+          <a href="./" class="link">简历首页</a>
+          <a href="#" data-popover=".popover-nav" class="open-popover link">导航</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- 底部nav模板 -->
-<div class="popover popover-nav">
-  <div class="popover-angle"></div>
-  <div class="popover-inner">
-    <div class="list-block app-nav"></div>
+  <!-- 底部nav模板 -->
+  <div class="popover popover-nav">
+    <div class="popover-angle"></div>
+    <div class="popover-inner">
+      <div class="list-block app-nav"></div>
+    </div>
   </div>
-</div>
 
-<!-- build:js ../lib/framework7.js -->
-<script type="text/javascript" src="../lib/framework7.js"></script>
-<!-- endbuild -->
-<!-- build:js ../lib/q.js -->
-<script src= "../lib/q.js"></script>
-<!-- endbuild -->
-<script type="text/javascript" src="../static/js/index.js"></script>
+  <!-- build:js ../lib/framework7.js -->
+  <script type="text/javascript" src="../lib/framework7.js"></script>
+  <!-- endbuild -->
+  <!-- build:js ../lib/q.js -->
+  <script src= "../lib/q.js"></script>
+  <!-- endbuild -->
+  <script type="text/javascript" src="../static/js/index.js"></script>
 </body>
 </html>

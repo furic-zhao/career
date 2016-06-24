@@ -1,10 +1,32 @@
-      {{#each this}}
-      <div class="card ks-card-header-pic show-photo" data-id="{{id}}">
-        <div style="background-image:url({{cover}})" valign="bottom" class="card-header color-white no-border">{{name}}</div>
-        <div class="card-content">
-          <div class="card-content-inner">
-            <p>{{desc}}</p>
-          </div>
-        </div>
-      </div>
-      {{/each}}
+{{#each this}}
+{{#if cover}}
+<div class="card ks-card-header-pic show-photo" data-id="{{id}}">
+  <div class="card-header">{{name}}</div>
+  <div style="background-image:url({{cover}})" valign="bottom" class="card-image color-white no-border"></div>
+  {{#if desc}}
+  <div class="card-content">
+    <div class="card-content-inner">
+      <p>{{desc}}</p>
+    </div>
+  </div>
+  {{/if}}
+</div>
+{{else}}
+<div class="card">
+  <div class="card-content">
+    <div class="list-block">
+      <ul>
+        <li>
+          <a href="{{url}}" target="_blank" class="external item-link item-content">
+            <div class="item-inner">
+              <div class="item-title">{{name}}({{url}})</div>
+              <div class="item-after">{{tip}}</div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+{{/if}}
+{{/each}}

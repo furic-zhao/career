@@ -1,4 +1,3 @@
-var beijingjieshaoTemp = require('./beijingjieshao.hbs');
 var popupTemp = require('./popup.hbs');
 
 var appNavTemp = require('./app-nav.hbs');
@@ -13,33 +12,26 @@ var myApp = new Framework7();
 // Export selectors engine
 var $$ = Dom7;
 
-
-
 // Add main View
 var mainView = myApp.addView('.view-main', {
     // Enable dynamic Navbar
     dynamicNavbar: true,
 });
 
+/*加载导航模板*/
 $$(".app-nav").html(appNavTemp());
 myApp.onPageInit('index', function(page) {
     $$(".app-nav").html(appNavTemp());
 });
 
-/* ===== Modals Page events  ===== */
-myApp.onPageInit('beijingjieshao', function(page) {
-    $$('.demo-picker-modal').on('click', function() {
-        myApp.pickerModal(beijingjieshaoTemp());
-    });
-});
-
+/*经历*/
 myApp.onPageInit('jingli', function(page) {
     $$('.demo-popup').on('click', function() {
         myApp.popup(popupTemp());
     });
 });
 
-
+/*作品*/
 myApp.onPageInit('works', function(page) {
 
     workService.getList().then(function(data) {
