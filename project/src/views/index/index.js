@@ -19,15 +19,42 @@ var mainView = myApp.addView('.view-main', {
 });
 
 /*加载导航模板*/
-$$(".app-nav").html(appNavTemp());
-myApp.onPageInit('index', function(page) {
-    $$(".app-nav").html(appNavTemp());
-});
+$$(".app-nav").append(appNavTemp());
 
-/*经历*/
-myApp.onPageInit('jingli', function(page) {
-    $$('.demo-popup').on('click', function() {
-        myApp.popup(popupTemp());
+/*经历相关作品*/
+myApp.onPageInit('jingli-work', function(page) {
+    console.log(page);
+    var typeVal = page.query.type;
+    workService.getTypeList(typeVal).then(function(data) {
+        var workPopupTitle = {
+            "2012": "2012年~至今 的作品",
+            "2007": "2007年~2012年 的作品",
+            "2004": "2004年~2007年 的作品"
+        };
+        $$(".jingli-works-title").html(workPopupTitle[typeVal]);
+        $$(".works-list-box").html(worksListTemp(data));
+        myApp.swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            // effect: 'coverflow',
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            preloadImages: false,
+            lazyLoading: true
+        });
+
+        $$('.show-photo').on('click', function() {
+            var $$this = $$(this);
+
+            workService.getById($$this.attr("data-id")).then(function(data) {
+                myApp.photoBrowser({
+                    photos: data.list,
+                    lazyLoading: true,
+                    theme: 'dark',
+                    backLinkText: '返回'
+                }).open();
+            });
+
+        });
     });
 });
 

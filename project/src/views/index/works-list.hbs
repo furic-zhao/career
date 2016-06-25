@@ -1,8 +1,7 @@
 {{#each this}}
-{{#if cover}}
-<div class="card ks-card-header-pic show-photo" data-id="{{id}}">
+<div class="card ks-card-header-pic swiper-slide">
   <div class="card-header">{{name}}</div>
-  <div style="background-image:url({{cover}})" valign="bottom" class="card-image color-white no-border"></div>
+  <div style="background-image:url({{cover}})" valign="bottom" class="show-photo card-image color-white no-border lazy lazy-fadein"  data-id="{{id}}"></div>
   {{#if desc}}
   <div class="card-content">
     <div class="card-content-inner">
@@ -10,23 +9,11 @@
     </div>
   </div>
   {{/if}}
-</div>
-{{else}}
-<div class="card">
-  <div class="card-content">
-    <div class="list-block">
-      <ul>
-        <li>
-          <a href="{{url}}" target="_blank" class="external item-link item-content">
-            <div class="item-inner">
-              <div class="item-title">{{name}}({{url}})</div>
-              <div class="item-after">{{tip}}</div>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
+  <div class="card-footer">
+    <a href="#" class="link show-photo" data-id="{{id}}">更多图片</a>
+    {{#if url}}
+    <a href="{{url}}" class="external link" target="_blank">作品链接</a>
+    {{/if}}
   </div>
 </div>
-{{/if}}
 {{/each}}
