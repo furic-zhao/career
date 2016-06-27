@@ -98,6 +98,10 @@ module.exports = function(gulp, config) {
         return copyHandler('slice');
     }
 
+    function copyFonts() {
+        return copyHandler('fonts');
+    }
+
     //复制操作 end
 
     //编译 less
@@ -246,6 +250,15 @@ module.exports = function(gulp, config) {
                     }
                     break;
 
+                case 'fonts':
+                    if (type === 'removed') {
+                        var tmp = file.replace('src/', 'dev/');
+                        del([tmp]);
+                    } else {
+                        copyHandler('fonts', file);
+                    }
+                    break;
+
                 case 'slice':
                     if (type === 'removed') {
                         var tmp = file.replace('src/', 'dev/');
@@ -321,6 +334,7 @@ module.exports = function(gulp, config) {
         delDev,
         gulp.parallel(
             copyImg,
+            copyFonts,
             copySlice,
             copyLib,
             compileLess,

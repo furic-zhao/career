@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="../static/css/page-framework7.ios.css">
   <!-- Path to Framework7 color related styles, iOS Theme -->
   <link rel="stylesheet" href="../static/css/page-framework7.ios.colors.css">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="../static/css/page-font-awesome.css">
   <!-- Path to your custom app styles-->
   <link rel="stylesheet" href="../static/css/page-index.css"></head>
 <body>
@@ -29,18 +31,10 @@
     <div class="content-block-title">关于WebApp</div>
     <div class="content-block">
       <p>这是一个基于Framework7构建的WebApp简历。</p>
-      <p>
-        使用gulp自动化构建工程（LESS/Sass编译、CSS/JS合并压缩、雪碧图自动合成、Imagemin图片压缩等）。
-      </p>
-      <p>
-        使用Browserify分层规划、管理打包业务层模块逻辑，使用Nodejs风格模块式开发。
-      </p>
-      <p>
-        使用Q.js(Promise)异步编程、管理各模块的依赖和运行。
-      </p>
-      <p>
-        使用LiveReload作为研发环境、监听文件变动、自动刷新浏览器。
-      </p>
+      <p>使用gulp自动化构建工程（LESS/Sass编译、CSS/JS合并压缩、雪碧图自动合成、Imagemin图片压缩等）。</p>
+      <p>使用Browserify分层规划、管理打包业务层模块逻辑，使用Nodejs风格模块式开发。</p>
+      <p>使用Q.js(Promise)异步编程、管理各模块的依赖和运行。</p>
+      <p>使用LiveReload作为研发环境、监听文件变动、自动刷新浏览器。</p>
     </div>
   </div>
   <!-- Right panel with cover effect-->
@@ -66,7 +60,7 @@
       <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
       <div class="pages navbar-through toolbar-through">
         <!-- Index Page-->
-        <div data-page="index" class="page">
+        <div data-page="home" class="page">
           <div class="page-content">
             <!-- 头像 -->
             <div class="card ks-card-header-pic">
@@ -98,9 +92,11 @@
 
             <!-- 首页基本信息 -->
             <div class="list-block">
-              <ul class="app-nav">
+              <ul class="app-nav index-app-nav">
                 <li>
+
                   <div class="item-content">
+                    <div class="item-media"> <i class="fa fa-user-secret"></i></div>
                     <div class="item-inner">
                       <div class="item-title">姓名</div>
                       <div class="item-after">赵会见(Furic)</div>
@@ -110,6 +106,7 @@
 
                 <li>
                   <div class="item-content">
+                  <div class="item-media"> <i class="fa fa-flag"></i></div>
                     <div class="item-inner">
                       <div class="item-title">现任职位</div>
                       <div class="item-after">前端技术经理</div>
@@ -119,6 +116,7 @@
 
                 <li>
                   <div class="item-content">
+                  <div class="item-media"> <i class="fa fa-street-view"></i></div>
                     <div class="item-inner">
                       <div class="item-title">工作经验</div>
                       <div class="item-after">12年WEB产品架构研发经验</div>
@@ -148,29 +146,30 @@
         </div>
       </div>
       <!-- Bottom Toolbar-->
-<!--       <div class="toolbar">
-        <div class="toolbar-inner">
-          <a href="./" class="link"></a>
-          <a href="#" data-popover=".popover-nav" class="open-popover link">导航</a>
-        </div>
-      </div> -->
+      <!--       <div class="toolbar">
+      <div class="toolbar-inner">
+        <a href="./" class="link"></a>
+        <a href="#" data-popover=".popover-nav" class="open-popover link">导航</a>
+      </div>
     </div>
+    -->
   </div>
+</div>
 
-  <!-- 底部nav模板 -->
-  <div class="popover popover-nav">
-    <div class="popover-angle"></div>
-    <div class="popover-inner">
-      <div class="list-block app-nav"></div>
-    </div>
+<!-- 底部nav模板 -->
+<div class="popover popover-nav">
+  <div class="popover-angle"></div>
+  <div class="popover-inner">
+    <div class="list-block app-nav"></div>
   </div>
+</div>
 
-  <!-- build:js ../lib/framework7.js -->
-  <script type="text/javascript" src="../lib/framework7.js"></script>
-  <!-- endbuild -->
-  <!-- build:js ../lib/q.js -->
-  <script src= "../lib/q.js"></script>
-  <!-- endbuild -->
-  <script type="text/javascript" src="../static/js/index.js"></script>
+<!-- build:js ../lib/framework7.js -->
+<script type="text/javascript" src="../lib/framework7.js"></script>
+<!-- endbuild -->
+<!-- build:js ../lib/q.js -->
+<script src= "../lib/q.js"></script>
+<!-- endbuild -->
+<script type="text/javascript" src="../static/js/index.js"></script>
 </body>
 </html>

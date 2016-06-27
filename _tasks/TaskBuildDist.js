@@ -7,6 +7,8 @@ var gulpif = require('gulp-if');
 var less = require('gulp-less');
 var util = require('./lib/util');
 
+var size = require('gulp-size');
+
 /* 压缩js
 https://github.com/terinjokes/gulp-uglify
  */
@@ -149,6 +151,15 @@ module.exports = function(gulp, config) {
                 use: [pngquant()]
             }))
             .pipe(gulp.dest(config.paths.tmp.img));
+    }
+
+    //字体
+    function fontsSize() {
+        return gulp.src(config.paths.src.fonts)
+            .pipe(size({
+                title: 'fonts'
+            }))
+            .pipe(gulp.dest(config.paths.tmp.fonts));
     }
 
     //JS 压缩
@@ -339,6 +350,7 @@ module.exports = function(gulp, config) {
         miniCSS,
         gulp.parallel(
             imageminImg,
+            fontsSize,
             imageminSprite,
             // uglifyJs,
             compileAppJs

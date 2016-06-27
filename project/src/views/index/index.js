@@ -19,7 +19,11 @@ var mainView = myApp.addView('.view-main', {
 });
 
 /*加载导航模板*/
-$$(".app-nav").append(appNavTemp());
+$$(".app-nav").append(appNavTemp())
+myApp.onPageInit('home', function(page) {
+  $$(".index-app-nav").append(appNavTemp());
+  
+});
 
 /*经历相关作品*/
 myApp.onPageInit('jingli-work', function(page) {
@@ -32,7 +36,11 @@ myApp.onPageInit('jingli-work', function(page) {
             "2004": "2004年~2007年 的作品"
         };
         $$(".jingli-works-title").html(workPopupTitle[typeVal]);
-        $$(".works-list-box").html(worksListTemp(data));
+        $$(".works-list-box")
+            .html(worksListTemp(data))
+            .find('.js-card')
+            .addClass('swiper-slide');
+
         myApp.swiper('.swiper-container', {
             pagination: '.swiper-pagination',
             // effect: 'coverflow',

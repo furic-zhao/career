@@ -40,6 +40,8 @@
             "img": "./src/static/images/**/*.{JPG,jpg,png,gif}",
             "slice": "./src/static/slice/**/*.png",
 
+            "fonts": "./src/static/fonts/**/*.{otf,eot,svg,ttf,woff,woff2}",
+
             "lib": "./src/lib/**/*.js",
 
             "appJs": "./src/views/*/*.js",
@@ -59,6 +61,8 @@
 
             "css": "./dev/static/css",
 
+            "fonts": "./dev/static/fonts",
+
             "html": "./dev/html"
         },
 
@@ -68,6 +72,8 @@
             "appjs": "./tmp/static/js", //业务层js
 
             "css": "./tmp/static/css",
+
+            "fonts": "./tmp/static/fonts",
 
             "img": "./tmp/static/images",
             "sprite": "./tmp/static/sprite",
@@ -81,6 +87,8 @@
             "appjs": "./dist/static/js", //业务层js
 
             "css": "./dist/static/css",
+
+            "fonts": "./dist/static/fonts",
 
             "img": "./dist/static/images",
             "sprite": "./dist/static/sprite",

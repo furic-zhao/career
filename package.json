@@ -23,6 +23,7 @@
     "gulp-replace": "^0.5.4",
     "gulp-rev-all": "^0.8.22",
     "gulp-rev-delete-original": "^0.1.0",
+    "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-strip-debug": "^1.1.0",
     "gulp-tmtsprite": "^0.0.20",

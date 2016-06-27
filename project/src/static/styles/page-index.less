@@ -8,29 +8,34 @@
 
 // @import "lib/mixins";
 // @import "lib/reset";
+@import "font-awesome/font-awesome";
 
-.ks-card-header-pic .card-image {
-  height: 50vw;
-  background-size: cover;
-  background-position: center;
-  text-shadow: 2px 2px 2px #000;
+.ks-card-header-pic {
+	.card-image {
+		height: 70vw;
+		background-size: cover;
+		background-position: center;
+		text-shadow: 2px 2px 2px #000;
+	}
+	.fa {
+		float: left;
+	}
 }
-
 .ks-coverflow-slider {
-    height: 60%;
-    top: 20%;
-    .swiper-slide {
-        width: 65%;
-    }
+	height: 60%;
+	top: 20%;
+
+	.swiper-slide {
+		width: 65%;
+	}
 }
 .ks-cube-slider, .ks-coverflow-slider {
-    .swiper-slide {
-        background-size: cover;
-        color: #fff;
-        -webkit-backface-visibility: hidden;
-    }
+	.swiper-slide {
+		background-size: cover;
+		color: #fff;
+		-webkit-backface-visibility: hidden;
+	}
 }
-
 .aboutme-pic {
 	background-image: url(../images/zhaozhao.png);
 }
