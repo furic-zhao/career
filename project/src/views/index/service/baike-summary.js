@@ -1,0 +1,63 @@
+var baikeSummary = [{
+	url: './static/images/works/baikesummary/01.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/02.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/03.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/04.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/05.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/06.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/07.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/08.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/09.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/10.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/11.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/12.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/13.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/14.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/15.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/16.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/17.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/18.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/19.png',
+	caption: ''
+}, {
+	url: './static/images/works/baikesummary/20.png',
+	caption: ''
+}];
+
+module.exports = baikeSummary;

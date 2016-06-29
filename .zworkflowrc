@@ -11,7 +11,7 @@
     "livereload": {
         "available": true, //开启自动刷新
         "port": 8080,
-        "startPath": "html/index.html" //启动时自动打开的路径
+        "startPath": "index.html" //启动时自动打开的路径
     },
 
     //路径相对于 tasks/plugins 目录
@@ -63,7 +63,7 @@
 
             "fonts": "./dev/static/fonts",
 
-            "html": "./dev/html"
+            "html": "./dev"
         },
 
         "tmp": {
@@ -78,7 +78,7 @@
             "img": "./tmp/static/images",
             "sprite": "./tmp/static/sprite",
 
-            "html": "./tmp/html"
+            "html": "./tmp"
         },
 
         "dist": {
@@ -93,7 +93,7 @@
             "img": "./dist/static/images",
             "sprite": "./dist/static/sprite",
 
-            "html": "./dist/html"
+            "html": "./dist"
         }
     }
 }

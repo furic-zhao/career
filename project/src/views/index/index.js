@@ -6,6 +6,8 @@ var worksListTemp = require('./works-list.hbs');
 
 var workService = require('./service/works');
 
+var baikeSummaryData = require('./service/baike-summary');
+
 // Initialize your app
 var myApp = new Framework7();
 
@@ -21,13 +23,27 @@ var mainView = myApp.addView('.view-main', {
 /*加载导航模板*/
 $$(".app-nav").append(appNavTemp())
 myApp.onPageInit('home', function(page) {
-  $$(".index-app-nav").append(appNavTemp());
-  
+    $$(".index-app-nav").append(appNavTemp());
+
+});
+
+/*经历相关作品*/
+myApp.onPageInit('jingli', function(page) {
+
+    $$('.baike-summary').on('click', function() {
+        myApp.photoBrowser({
+            photos: baikeSummaryData,
+            lazyLoading: true,
+            theme: 'dark',
+            backLinkText: '返回'
+        }).open();
+
+    });
 });
 
 /*经历相关作品*/
 myApp.onPageInit('jingli-work', function(page) {
-    console.log(page);
+
     var typeVal = page.query.type;
     workService.getTypeList(typeVal).then(function(data) {
         var workPopupTitle = {
@@ -39,16 +55,21 @@ myApp.onPageInit('jingli-work', function(page) {
         $$(".works-list-box")
             .html(worksListTemp(data))
             .find('.js-card')
-            .addClass('swiper-slide');
+            .addClass('swiper-slide')
+            .find(".swiper-lazy")
+            .append('<div class="preloader"></div>');
+
+        myApp.initImagesLazyLoad('.page');
 
         myApp.swiper('.swiper-container', {
+            preloadImages: false,
+            lazyLoading: true,
             pagination: '.swiper-pagination',
             // effect: 'coverflow',
             slidesPerView: 'auto',
-            centeredSlides: true,
-            preloadImages: false,
-            lazyLoading: true
+            centeredSlides: true
         });
+
 
         $$('.show-photo').on('click', function() {
             var $$this = $$(this);
@@ -71,6 +92,8 @@ myApp.onPageInit('works', function(page) {
 
     workService.getList().then(function(data) {
         $$(".works-list-box").html(worksListTemp(data));
+
+        myApp.initImagesLazyLoad('.page');
 
         $$('.show-photo').on('click', function() {
             var $$this = $$(this);

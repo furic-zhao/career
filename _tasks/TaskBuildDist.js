@@ -156,9 +156,7 @@ module.exports = function(gulp, config) {
     //字体
     function fontsSize() {
         return gulp.src(config.paths.src.fonts)
-            .pipe(size({
-                title: 'fonts'
-            }))
+            .pipe(size())
             .pipe(gulp.dest(config.paths.tmp.fonts));
     }
 
