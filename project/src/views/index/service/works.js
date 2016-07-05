@@ -330,93 +330,29 @@ var workInfo = {
 			caption: ''
 		}]
 	}, {
-		id: "aimei36计",
+		id: "qinghua",
 		type: "2004",
-		name: "爱美36化妆品在线商城",
-		time: "2009年作品",
-		desc: "基于PHP的shopex二次开发，完整的在线商城系统",
-		cover: './static/images/works/aimei36/cover.png',
+		name: "清华大学出版社第六事业部",
+		time: "2004-2005年作品",
+		desc: "清华出版社第六事业部官方网站，新书、畅销书、精品图书展示和在线订购，图书相关资料下载，和读者留言等",
+		cover: './static/images/works/qinghua/cover.jpg',
 		list: [{
-			url: './static/images/works/aimei36/01.png',
+			url: './static/images/works/qinghua/01.jpg',
 			caption: ''
 		}, {
-			url: './static/images/works/aimei36/02.png',
+			url: './static/images/works/qinghua/02.jpg',
 			caption: ''
 		}, {
-			url: './static/images/works/aimei36/03.png',
+			url: './static/images/works/qinghua/03.jpg',
 			caption: ''
 		}, {
-			url: './static/images/works/aimei36/04.png',
-			caption: ''
-		}]
-	}, {
-		id: "weitai",
-		type: "2004",
-		name: "唯泰古典家居网",
-		time: "2007年作品",
-		desc: "ASP科讯系统二次开发，山西太原地方家具网站，实现古典家具展示、在线订购、会员互动等功能",
-		cover: './static/images/works/weitai/cover.png',
-		list: [{
-			url: './static/images/works/weitai/01.png',
+			url: './static/images/works/qinghua/04.jpg',
 			caption: ''
 		}, {
-			url: './static/images/works/weitai/02.png',
+			url: './static/images/works/qinghua/05.jpg',
 			caption: ''
 		}, {
-			url: './static/images/works/weitai/03.png',
-			caption: ''
-		}, {
-			url: './static/images/works/weitai/04.png',
-			caption: ''
-		}, {
-			url: './static/images/works/weitai/05.png',
-			caption: ''
-		}, {
-			url: './static/images/works/weitai/06.png',
-			caption: ''
-		}, {
-			url: './static/images/works/weitai/07.png',
-			caption: ''
-		}, {
-			url: './static/images/works/weitai/08.png',
-			caption: ''
-		}]
-	}, {
-		id: "crazyenglish",
-		type: "2004",
-		name: "北京疯狂英语项目",
-		url: "http://www.bjcrazyenglish.com/",
-		desc: "疯狂英语官方网站、在线报名系统、全国授权点互动交流",
-		cover: './static/images/works/crazyenglish/cover.png',
-		list: [{
-			url: './static/images/works/crazyenglish/01.jpg',
-			caption: ''
-		}, {
-			url: './static/images/works/crazyenglish/02.png',
-			caption: ''
-		}, {
-			url: './static/images/works/crazyenglish/03.png',
-			caption: ''
-		}, {
-			url: './static/images/works/crazyenglish/04.png',
-			caption: ''
-		}, {
-			url: './static/images/works/crazyenglish/05.png',
-			caption: ''
-		}, {
-			url: './static/images/works/crazyenglish/06.png',
-			caption: ''
-		}, {
-			url: './static/images/works/crazyenglish/07.png',
-			caption: ''
-		}, {
-			url: './static/images/works/crazyenglish/08.png',
-			caption: ''
-		}, {
-			url: './static/images/works/crazyenglish/09.png',
-			caption: ''
-		}, {
-			url: './static/images/works/crazyenglish/10.png',
+			url: './static/images/works/qinghua/06.jpg',
 			caption: ''
 		}]
 	}, {
@@ -479,29 +415,93 @@ var workInfo = {
 			caption: ''
 		}]
 	}, {
-		id: "qinghua",
+		id: "crazyenglish",
 		type: "2004",
-		name: "清华大学出版社第六事业部",
-		time: "2004-2005年作品",
-		desc: "清华出版社第六事业部官方网站，新书、畅销书、精品图书展示和在线订购，图书相关资料下载，和读者留言等",
-		cover: './static/images/works/qinghua/cover.jpg',
+		name: "北京疯狂英语项目",
+		url: "http://www.bjcrazyenglish.com/",
+		desc: "疯狂英语官方网站、在线报名系统、全国授权点互动交流平台",
+		cover: './static/images/works/crazyenglish/cover.png',
 		list: [{
-			url: './static/images/works/qinghua/01.jpg',
+			url: './static/images/works/crazyenglish/01.jpg',
 			caption: ''
 		}, {
-			url: './static/images/works/qinghua/02.jpg',
+			url: './static/images/works/crazyenglish/02.png',
 			caption: ''
 		}, {
-			url: './static/images/works/qinghua/03.jpg',
+			url: './static/images/works/crazyenglish/03.png',
 			caption: ''
 		}, {
-			url: './static/images/works/qinghua/04.jpg',
+			url: './static/images/works/crazyenglish/04.png',
 			caption: ''
 		}, {
-			url: './static/images/works/qinghua/05.jpg',
+			url: './static/images/works/crazyenglish/05.png',
 			caption: ''
 		}, {
-			url: './static/images/works/qinghua/06.jpg',
+			url: './static/images/works/crazyenglish/06.png',
+			caption: ''
+		}, {
+			url: './static/images/works/crazyenglish/07.png',
+			caption: ''
+		}, {
+			url: './static/images/works/crazyenglish/08.png',
+			caption: ''
+		}, {
+			url: './static/images/works/crazyenglish/09.png',
+			caption: ''
+		}, {
+			url: './static/images/works/crazyenglish/10.png',
+			caption: ''
+		}]
+	}, {
+		id: "weitai",
+		type: "2004",
+		name: "唯泰古典家居网",
+		time: "2007年作品",
+		desc: "ASP科讯系统二次开发，山西太原地方家具网站，实现古典家具展示、在线订购、会员互动等功能",
+		cover: './static/images/works/weitai/cover.png',
+		list: [{
+			url: './static/images/works/weitai/01.png',
+			caption: ''
+		}, {
+			url: './static/images/works/weitai/02.png',
+			caption: ''
+		}, {
+			url: './static/images/works/weitai/03.png',
+			caption: ''
+		}, {
+			url: './static/images/works/weitai/04.png',
+			caption: ''
+		}, {
+			url: './static/images/works/weitai/05.png',
+			caption: ''
+		}, {
+			url: './static/images/works/weitai/06.png',
+			caption: ''
+		}, {
+			url: './static/images/works/weitai/07.png',
+			caption: ''
+		}, {
+			url: './static/images/works/weitai/08.png',
+			caption: ''
+		}]
+	}, {
+		id: "aimei36计",
+		type: "2004",
+		name: "爱美36化妆品在线商城",
+		time: "2009年作品",
+		desc: "基于PHP的shopex二次开发，完整的在线商城系统",
+		cover: './static/images/works/aimei36/cover.png',
+		list: [{
+			url: './static/images/works/aimei36/01.png',
+			caption: ''
+		}, {
+			url: './static/images/works/aimei36/02.png',
+			caption: ''
+		}, {
+			url: './static/images/works/aimei36/03.png',
+			caption: ''
+		}, {
+			url: './static/images/works/aimei36/04.png',
 			caption: ''
 		}]
 	}, {
@@ -529,7 +529,7 @@ var workInfo = {
 		id: "other",
 		type: "2004",
 		name: "其它作品部分信息",
-		desc: "2005年起接单做网站创业的其它部分作品(大小企业站30多个)",
+		desc: "2005年起接单做网站、基于开源系统搭建个人网站、的部分作品(大小企业站30多个)",
 		cover: "./static/images/works/other/cover.png",
 		list: [{
 			url: './static/images/works/other/01.jpg',

@@ -1,5 +1,3 @@
-var popupTemp = require('./popup.hbs');
-
 var appNavTemp = require('./app-nav.hbs');
 
 var worksListTemp = require('./works-list.hbs');
