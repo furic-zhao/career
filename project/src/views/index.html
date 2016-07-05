@@ -158,12 +158,24 @@
   </div>
 </div>
 
+
 <!-- build:js ./lib/framework7.js -->
 <script type="text/javascript" src="../lib/framework7.js"></script>
 <!-- endbuild -->
 <!-- build:js ./lib/q.js -->
 <script src= "../lib/q.js"></script>
 <!-- endbuild -->
+<script>
+var myApp = new Framework7();
+
+var $$ = Dom7;
+
+// Add main View
+var mainView = myApp.addView('.view-main', {
+    // Enable dynamic Navbar
+    dynamicNavbar: true,
+});
+</script>
 <script type="text/javascript" src="./static/js/index.js"></script>
 </body>
 </html>
