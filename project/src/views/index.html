@@ -26,13 +26,29 @@
 
     <div class="content-block-title">页面导航</div>
     <div class="list-block">
+<<<<<<< HEAD
       <ul class="app-nav">
         <!-- 导航模板 -->
       </ul>
+=======
+      <ul class="app-nav"></ul>
+    </div>
+    <div class="content-block-title">关于本系统</div>
+    <div class="content-block">
+      <p>这是一个基于Framework7构建的WebApp简历。</p>
+      <p>使用gulp自动化构建工程（Less/Sass编译、CSS/JS合并压缩、雪碧图自动合成、Imagemin图片压缩等）。</p>
+      <p>使用Nodejs风格模块式开发，使用Browserify分层规划、管理打包业务层JS逻辑和Handlebars模板。</p>
+      <p>使用Q.js(Promise)异步编程、管理各模块的依赖和运行。</p>
+      <p>使用LiveReload作为研发环境、监听文件变动、自动刷新浏览器、多终端自动化测试。</p>
+>>>>>>> 08d0c018126c5a36bb5ce6d9eef5b73e19a376f0
     </div>
 
   </div>
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 08d0c018126c5a36bb5ce6d9eef5b73e19a376f0
   <!-- Views-->
   <div class="views">
     <!-- Your main view, should have "view-main" class-->
@@ -59,12 +75,51 @@
                 <!-- 导航模板 -->
               </ul>
             </div>
+<<<<<<< HEAD
             <!-- /首页基本信息 --> </div>
         </div>
       </div>
     </div>
+=======
+            <!-- /首页基本信息 -->
+
+            <!-- 意向岗位 -->
+            <div class="content-block-title">意向岗位</div>
+            <div class="content-block">
+              <div class="content-block-inner">
+                <p>高级WEB产品架构师、技术管理职位、产品职位</p>
+              </div>
+            </div>
+            <!-- /意向岗位 -->
+
+            <!-- 意向职责 -->
+            <div class="content-block-title">意向职责</div>
+            <div class="content-block">
+              <div class="content-block-inner">
+                <p>
+                  负责产品需求分析和架构设计、参与系统技术选型及核心模块技术验证和技术攻关，带领团队实现并完善产品功能，协调测试、上线、反馈等流程，控制产品进度及处理各环节问题，保证产品最终质量
+                </p>
+              </div>
+            </div>
+            <!-- /意向职责 -->
+
+            <!-- word版简历 -->
+            <div class="content-block-title">word版简历</div>
+            <div class="content-block">
+              <div class="content-block-inner">
+              <p>
+                http://www.hestudy.com/career.docx
+              </p>
+              </div>
+            </div>
+            <!-- /word版简历 -->
+          </div>
+        </div>
+      </div>
+>>>>>>> 08d0c018126c5a36bb5ce6d9eef5b73e19a376f0
   </div>
 
+<<<<<<< HEAD
   <!-- build:js ./lib/framework7.js -->
   <script type="text/javascript" src="../lib/framework7.js"></script>
   <!-- endbuild -->
@@ -76,12 +131,30 @@ var myApp = new Framework7();
 
 var $$ = Dom7;
 
+=======
+
+<!-- build:js ./lib/framework7.js -->
+<script type="text/javascript" src="../lib/framework7.js"></script>
+<!-- endbuild -->
+<!-- build:js ./lib/q.js -->
+<script src= "../lib/q.js"></script>
+<!-- endbuild -->
+<script>
+var myApp = new Framework7();
+
+var $$ = Dom7;
+
+>>>>>>> 08d0c018126c5a36bb5ce6d9eef5b73e19a376f0
 // Add main View
 var mainView = myApp.addView('.view-main', {
     // Enable dynamic Navbar
     dynamicNavbar: true,
 });
 </script>
+<<<<<<< HEAD
   <script type="text/javascript" src="./static/js/index.js"></script>
+=======
+<script type="text/javascript" src="./static/js/index.js"></script>
+>>>>>>> 08d0c018126c5a36bb5ce6d9eef5b73e19a376f0
 </body>
 </html>
