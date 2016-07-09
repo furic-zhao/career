@@ -1,0 +1,17 @@
+{{#each this}}
+<div class="content-block-title">{{this.title}}</div>
+<div class="list-block">
+  <ul>
+    {{#each this.content}}
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title">{{this.subtitle}}</div>
+          <div class="item-after">{{this.subcontent}}</div>
+        </div>
+      </div>
+    </li>
+    {{/each}}
+  </ul>
+</div>
+{{/each}}

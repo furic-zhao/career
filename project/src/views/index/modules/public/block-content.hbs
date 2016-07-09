@@ -1,0 +1,10 @@
+    {{#each this}}
+    <div class="content-block-title">{{this.title}}</div>
+    <div class="content-block">
+      <div class="content-block-inner">
+      {{#each this.content}}
+      <p>{{this}}</p>
+      {{/each}}
+      </div>
+    </div>
+    {{/each}}

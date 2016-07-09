@@ -185,7 +185,8 @@ module.exports = function(gulp, config) {
                             console.log(error);
                         })
                         .pipe(sourcemaps.write('./'))
-                        .pipe(gulp.dest(config.paths.dev.appjs));
+                        .pipe(gulp.dest(config.paths.dev.appjs))
+                        .on('end', reloadHandler);
                 }
 
             });
@@ -301,7 +302,7 @@ module.exports = function(gulp, config) {
             config.paths.src.lib,
             config.paths.src.lessAll,
             config.paths.src.htmlAll,
-            config.paths.src.appJsALL
+            // config.paths.src.appJsALL
         ], {
             ignored: /[\/\\]\./
         });

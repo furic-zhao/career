@@ -1,0 +1,20 @@
+{{#each this}}
+<div class="js-card card ks-card-header-pic">
+  <div class="card-header">{{name}}</div>
+  <div data-background="{{cover}}" valign="bottom" class="lazy lazy-fadein swiper-lazy show-photo card-image color-white no-border"  data-id="{{id}}"></div>
+  
+  {{#if desc}}
+  <div class="card-content">
+    <div class="card-content-inner">
+      <p>{{desc}}</p>
+    </div>
+  </div>
+  {{/if}}
+  <div class="card-footer">
+    <a href="#" class="link show-photo" data-id="{{id}}"><i class="fa fa-photo"></i> 更多图片</a>
+    {{#if url}}
+    <a href="{{url}}" class="external link" target="_blank"><i class="fa fa-link"></i> 作品链接</a>
+    {{/if}}
+  </div>
+</div>
+{{/each}}
