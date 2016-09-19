@@ -16,20 +16,20 @@
 
     //路径相对于 tasks/plugins 目录
     "plugins": {
-        "build_devAfter": ["zIndex"], //dev 任务执行后自动执行
+        "build_devAfter": ["zindex"], //dev 任务执行后自动执行
         "build_distAfter": [], //build 任务执行后自动执行
         "ftpAfter": ["ftp"] //ftp 任务执行后自动执行
     },
 
     "lazyDir": ["../slice"], //gulp-lazyImageCSS 寻找目录(https://github.com/weixin/gulp-lazyimagecss)
 
-    "supportWebp": false, //是否使用 webp
+    "supportWebp": true, //是否使用 webp
 
     "supportREM": false, //是否使用REM 转换
 
-    "supportChanged": false,
+    "reversion": true, //是否启用md5文件名
 
-    "reversion": false, //是否启用md5文件名
+    "supportChanged": false, //如果启用md5文件名只编译改动过的文件（目前此功能未完善）
 
     /*路径配置*/
     "paths": {

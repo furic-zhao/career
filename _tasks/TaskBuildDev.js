@@ -195,7 +195,12 @@ module.exports = function(gulp, config) {
 
     //启动 livereload
     function startServer() {
+        /*
+        配置参考：http://www.browsersync.cn/docs/options/
+        */
         bs.init({
+            //在Chrome浏览器中打开网站 
+            browser: "google chrome",
             server: config.paths.dev.dir,
             port: config['livereload']['port'] || 8080,
             startPath: config['livereload']['startPath'] || '/html',
@@ -349,5 +354,4 @@ module.exports = function(gulp, config) {
         startServer
     ));
 
-    // gulp.task('javascript',compileAppJs);
 };

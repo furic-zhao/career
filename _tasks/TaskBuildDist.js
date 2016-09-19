@@ -210,7 +210,7 @@ module.exports = function(gulp, config) {
     function reversion(cb) {
         var revAll = new RevAll({
             fileNameManifest: 'manifest.json',
-            dontRenameFile: ['.html', '.php']
+            dontRenameFile: [/\/dynamic\/*/g,'.html', '.php']
         });
 
         if (config['reversion']) {
@@ -280,7 +280,7 @@ module.exports = function(gulp, config) {
                     .pipe(gulp.dest(config.paths.dist.dir))
                     .on('end', function() {
                         delTmp();
-                    })
+                    });
 
             } else {
                 console.log('Nothing changed!');

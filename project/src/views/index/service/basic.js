@@ -25,14 +25,8 @@ var basicData = [{
 }, {
 	title: '背景介绍',
 	content: [{
-		subtitle: '现任职位',
-		subcontent: '前端技术经理(T6)'
-	}, {
-		subtitle: '团队规模',
-		subcontent: '9人(两个T5、两个T4级别)'
-	}, {
 		subtitle: '工作经验',
-		subcontent: '12年WEB产品架构研发经验'
+		subcontent: '12年WEB产品架构研发'
 	}, {
 		subtitle: '毕业院校',
 		subcontent: '郑州轻工业学院(2000~2004年)'
@@ -56,7 +50,7 @@ var basicData = [{
 
 var faviconData = {
 	title:'furic',
-	favicon: './static/images/zhaozhao.png',
+	favicon: './static/images/dynamic/zhaozhao.jpg',
 	desc: '个人能力有限，团队力量无限！让激情燃烧自己，把火光照亮别人!'
 };
 
