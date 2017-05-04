@@ -1,31 +1,28 @@
 {{#each this}}
 <div id="tab{{addOne @index}}" class="page-content tab {{addActive @index}}">
-  <div class="content-block">
-    <div class="content-block-title">{{this.compony}}</div>
-    <div class="card">
-      <div class="card-content">
-        <div class="card-content-inner">
-          {{#each this.intro}}
-          <p>{{this}}</p>
-          {{/each}}
+    <div class="content-block">
+        <div class="content-block-title">{{this.compony}}</div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-content-inner">
+                    {{#each this.intro}}
+                    <p>{{this}}</p>
+                    {{/each}}
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-content">
-        <div class="card-content-inner">
-          {{#each this.grade}}
-          <p>{{this}}</p>
-          {{/each}}
-                {{{addOtherHref type}}}
+        <div class="card">
+            <div class="card-content">
+                <div class="card-content-inner">
+                    {{#each this.grade}}
+                    <p>{{this}}</p>
+                    {{/each}} {{{addOtherHref type}}}
+                </div>
+            </div>
         </div>
-      </div>
+        <p>
+            <a href="./index/experience-works.html?type={{type}}" class="button" data-type="{{type}}">相关作品</a>
+        </p>
     </div>
-
-    <p>
-      <a href="./index/experience-works.html?type={{type}}" class="button" data-type="{{type}}">相关作品</a>
-    </p>
-  </div>
 </div>
 {{/each}}

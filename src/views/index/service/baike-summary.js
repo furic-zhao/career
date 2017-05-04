@@ -1,63 +1,63 @@
 var baikeSummary = [{
-	url: './static/images/dynamic/baikesummary/01.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/01.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/02.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/02.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/03.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/03.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/04.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/04.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/05.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/05.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/06.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/06.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/07.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/07.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/08.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/08.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/09.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/09.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/10.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/10.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/11.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/11.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/12.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/12.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/13.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/13.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/14.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/14.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/15.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/15.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/16.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/16.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/17.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/17.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/18.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/18.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/19.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/19.png',
+    caption: ''
 }, {
-	url: './static/images/dynamic/baikesummary/20.png',
-	caption: ''
+    url: './static/images/dynamic/baikesummary/20.png',
+    caption: ''
 }];
 
 module.exports = baikeSummary;

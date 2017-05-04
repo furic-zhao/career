@@ -1,79 +1,48 @@
 // REM 适配 <html>
-
 // 375px (iPhone 6)
 // 此为基准值, 与视觉设计稿 `宽度/2` 保持一致
 html {
-  font-size: 20PX;
+    font-size: 16PX;
 }
 
-// 17.06 = 320*20/375 (iPhone 5)
-// 此处 hack 写法，使用 19px 代替 17px，兼容过小(<10px)的中文字体使用
+// 13.6533333 = 320*16/375 (iPhone 5)
 @media only screen and (min-width: 320px) {
-  html {
-    font-size: 19PX !important;
-  }
+    html {
+        font-size: 13.6533333PX !important;
+    }
 }
 
 // base root size (iPhone 6)
 @media only screen and (min-width: 375px) {
-  html {
-    font-size: 20PX !important;
-  }
+    html {
+        font-size: 16PX !important;
+    }
 }
 
-// 21.33333333 = 400*20/375 (Most Android)
+// 17.0666667 = 400*16/375 (Most Android)
 @media only screen and (min-width: 400px) {
-  html {
-    font-size: 21.33333333PX !important;
-  }
+    html {
+        font-size: 17.0666667PX !important;
+    }
 }
 
-// 22.08 = 414*20/375 (iPhone 6 Plus)
+// 17.664 = 414*16/375 (iPhone 6 Plus)
 @media only screen and (min-width: 414px) {
-  html {
-    font-size: 22.08PX !important;
-  }
+    html {
+        font-size: 17.664PX !important;
+    }
 }
 
-// 25.6 = 480*20/375 (iPad)
+// 20.48 = 480*16/375 (iPad)
 @media only screen and (min-width: 480px) {
-  html {
-    font-size: 25.6PX !important;
-  }
+    html {
+        font-size: 20.48PX !important;
+    }
 }
 
-// REM 适配 <html data-rem="320">
-
-// 320px (iPhone 5)
-// 此为基准值, 与视觉设计稿 `宽度/2` 保持一致
-html[data-rem="320"] {
-  font-size: 20PX;
-}
-
-// 23.4375 = 375*20/320 (Most Android)
-@media only screen and (min-width: 375px) {
-  html[data-rem="320"] {
-    font-size: 23.4375PX !important;
-  }
-}
-
-// 25 = 400*20/320 (Most Android)
-@media only screen and (min-width: 400px) {
-  html[data-rem="320"] {
-    font-size: 25PX !important;
-  }
-}
-
-// 25.875 = 414*20/320 (iPhone 6 Plus)
-@media only screen and (min-width: 414px) {
-  html[data-rem="320"] {
-    font-size: 25.875PX !important;
-  }
-}
-
-// 30 = 30 (iPad)
-@media only screen and (min-width: 480px) {
-  html[data-rem="320"] {
-    font-size: 30PX !important;
-  }
+// 桌面
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 16PX !important;
+    }
 }

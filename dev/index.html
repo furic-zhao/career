@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Your app title -->
+    <title>WebApp简历</title>
+    <!-- inject:bower:css -->
+    <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.ios.css">
+    <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.ios.colors.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <!-- endinject -->
+    <!-- inject:lib:css -->
+    <!-- 项目通用样式 -->
+    <!-- endinject -->
+    <!-- inject:views:css -->
+    <link rel="stylesheet" href="static/css/index.css">
+    <!-- endinject -->
+</head>
+
+<body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-cover layout-dark" id="js-panel-left">
+        <div class="content-block-title">页面导航</div>
+        <div class="list-block">
+            <ul class="app-nav">
+                <!-- 导航模板 -->
+            </ul>
+        </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class-->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center sliding">简历</div>
+                    <div class="right">
+                        <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Index Page-->
+                <div data-page="home" class="page">
+                    <div class="page-content" id="js-page-content">
+                        <!-- 首页基本信息 -->
+                        <div class="list-block">
+                            <ul class="app-nav index-app-nav">
+                                <!-- 导航模板 -->
+                            </ul>
+                        </div>
+                        <!-- /首页基本信息 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- inject:bower:js -->
+    <script src="bower_components/framework7/dist/js/framework7.js"></script>
+    <!-- endinject -->
+    <!-- inject:lib:js -->
+    <script src="lib/q.js"></script>
+    <!-- endinject -->
+    <script>
+    var myApp = new Framework7();
+
+    var $$ = Dom7;
+
+    var mainView = myApp.addView('.view-main', {
+        dynamicNavbar: true,
+    });
+    </script>
+    <!-- inject:views:js -->
+    <script src="static/js/index.js"></script>
+    <!-- endinject -->
+</body>
+
+</html>

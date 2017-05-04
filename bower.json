@@ -1,0 +1,34 @@
+{
+    "name": "fez-career",
+    "homepage": "https://github.com/furic-zhao/career",
+    "authors": [
+        "zhaohuijian <zhaohuijian@jd.com>"
+    ],
+    "description": "",
+    "main": "",
+    "license": "MIT",
+    "dependencies": {
+        "framework7": "^1.6.0",
+        "font-awesome": "^4.7.0"
+    },
+    "overrides": {
+        "framework7": {
+            "main": [
+                "dist/js/framework7.js",
+                "dist/css/framework7.ios.css",
+                "dist/css/framework7.ios.colors.css"
+            ]
+        },
+        "font-awesome": {
+            "main": [
+                "css/font-awesome.css",
+                "fonts/FontAwesome.otf",
+                "fonts/fontawesome-webfont.eot",
+                "fonts/fontawesome-webfont.svg",
+                "fonts/fontawesome-webfont.ttf",
+                "fonts/fontawesome-webfont.woff",
+                "fonts/fontawesome-webfont.woff2"
+            ]
+        }
+    }
+}

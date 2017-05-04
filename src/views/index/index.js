@@ -15,7 +15,7 @@ var moduleFavicon = require('./modules/favicon');
  */
 moduleFavicon.render($$("#js-page-content"));
 myApp.onPageInit('home', function(page) {
-	moduleFavicon.render($$("#js-page-content"));
+    moduleFavicon.render($$("#js-page-content"));
 });
 
 /*
